@@ -5,3 +5,14 @@ Each key is unique.
 Each value is accessed using its key.
 
 In hashes we access by key → $hash{key}
+
+
+
+Why do we even need a hash reference?
+A reference is like an address / pointer to a data structure (hash/array/etc.).
+Instead of copying the whole hash, you pass around a reference to it.
+You’ll see references when:
+
+passing a hash to a subroutine (very common)
+building nested structures (hash inside hash, hash of arrays, etc.)
+returning complex data from functions

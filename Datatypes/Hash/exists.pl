@@ -13,9 +13,22 @@ foreach my $key (keys %hash)
 
  if ( exists $hash{salary} )
  {
-	 print "key exists";
+	 print "key exists\n";
  }
  else
  {  
-	 print "key doesn't exists";
+	 print "key doesn't exists\n";
  }
+
+
+my %h = (
+    a => "",
+    b => undef,
+    c => 0,
+);
+
+print exists $h{a} ? "YES\n" : "NO\n";   # YES
+print exists $h{b} ? "YES\n" : "NO\n";   # YES
+print exists $h{c} ? "YES\n" : "NO\n";   # YES
+print exists $h{d} ? "YES\n" : "NO\n";   # NO (only missing key)
+
