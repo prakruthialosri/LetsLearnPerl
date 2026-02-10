@@ -10,7 +10,10 @@ print Dumper(\@sorted_names);
 
 
 my @nums = (30, 5, 100, 20);
-my @sorted_nums=sort{$a <=> $b}@nums;
+my @ascsorted_nums=sort{$a <=> $b}@nums;
+my @decsorted_nums=sort{$b<=> $a}@nums;
 print Dumper(\@nums);
-print Dumper(\@sorted_nums);
+print Dumper(\@ascsorted_nums);
+print Dumper(\@decsorted_nums);
+
 
