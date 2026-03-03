@@ -20,3 +20,8 @@ foreach my $key ( keys %color)
 {
 print "$key : $color{$key} \n";
 }
+
+while (my ($key , $val)= each %color)
+{
+	print "$key =>  $val ";
+}
